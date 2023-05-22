@@ -86,7 +86,7 @@ export default function Form() {
                         <option value="">Select a category</option>
                         {categories.map(category => {
                             return <option className='text-black-100' key={category.id} value={category.id}>
-                                    {category.categories_name}
+                                    {category.name}
                                    </option>
                         })}
                     </select>
@@ -99,7 +99,7 @@ export default function Form() {
                     >
                         <option value="">Select a course</option>
                         {courses.map(course => {
-                            return <option key={course.id} value={course.id}>{course.courses_name}</option>
+                            return <option key={course.id} value={course.id}>{course.name}</option>
                         })}
                     </select>
                 </div>
